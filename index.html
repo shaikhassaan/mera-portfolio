@@ -17,6 +17,10 @@
             font-family: "Poppins", sans-serif;
         }
 
+        html{
+            scroll-behavior: smooth;
+        }
+
         body {
             background-color: rgb(0, 0, 33);
             color: white;
@@ -90,53 +94,149 @@
         #element {
             color: blueviolet;
         }
-        .secondsection{
-             display: flex;
+
+        .secondsection {
+            display: flex;
             justify-content: space-around;
-            
-            
+
+
 
             max-width: 80vw;
-            height: 180vh;
-           
-        }
-        .Bleftsection{
-           margin-right: 200px;
-           margin-left: 100px;
+            height: 95vh;
+
         }
 
-        .Bleftsection h1{
-        font-size: 1.9rem;
-        margin-left: 37px;
-        
-        
+        .Bleftsection {
+            margin-right: 200px;
+            margin-left: 100px;
         }
 
-        #mern{
-        width: 350px;
-        height: 260px;
-        margin: 50px;
+        .Bleftsection h1 {
+            font-size: 1.9rem;
+            margin-left: 37px;
+
+
         }
 
-        #html{
-           margin-left: 25px;
-          
-            
+        #mern {
+            width: 350px;
+            height: 260px;
+            margin: 50px;
         }
 
-        .chlir{
+        #html {
+            margin-left: 25px;
+
+
+        }
+
+        .chlir {
             display: flex;
-             width: 100px;
+            width: 100px;
             height: 100px;
-              margin-left: 25px;
-         
+            margin-left: 25px;
+
 
         }
-        
-        .Brightsection img{
-        width: 120%;
-        margin-left: 30px;
-        margin-right: 270px;
+
+        .Brightsection img {
+            width: 120%;
+            margin-left: 30px;
+            margin-right: 270px;
+        }
+
+        .thirdsection {
+            height: 87vh;
+        }
+
+
+        #about {
+            padding: 80px, 0;
+
+
+        }
+
+        .row {
+            display: flex;
+            justify-content: space-between;
+        }
+
+        .about-col-1 {
+            flex-basis: 35%;
+
+        }
+
+        .about-col-1 img {
+            width: 88%;
+            padding-left: 40px;
+
+        }
+
+        .about-col-2 {
+            flex-basis: 60%;
+        }
+
+        .sub-title {
+            font-size: 40px;
+            font-weight: 600;
+            color: #fff;
+        }
+
+        .tab-titles {
+            display: flex;
+            margin: 20px 0 40px;
+        }
+
+        .tab-links {
+            margin-right: 50px;
+            font-size: 18px;
+            font-weight: 500;
+            cursor: pointer;
+            position: relative;
+        }
+
+        .tab-links:hover {
+            color: blueviolet;
+            font-size: 19px;
+        }
+
+        .tab-contents ul li {
+
+            list-style: none;
+            margin: 10px 0;
+
+        }
+
+        .tab-contents ul li span {
+            color: blueviolet;
+            font-size: 14px;
+            text-decoration: none;
+        }
+
+        .tab-contents ul li span a {
+            color: blueviolet;
+            text-decoration: none;
+        }
+
+        .tab-contents ul li span a:hover {
+            text-decoration: underline;
+        }
+
+        .tab-contents ul li a {
+            text-decoration: none;
+            color: blueviolet;
+        }
+
+        .tab-contents ul li a:hover {
+            text-decoration: underline;
+        }
+
+        .tab-contents {
+            display: none;
+        }
+
+        .tab-contents.active-tab {
+            display: block;
         }
 
 
@@ -156,35 +256,111 @@
 
 
 
+        .contact-left {
+            flex-basis: 35%;
+            margin: 60px;
+        }
+
+        .contact-right {
+            flex-basis: 60%;
+        }
+
+        .contact-left p {
+            margin: 20px 0;
+            font-size: 18px;
+        }
+
+        .contact-left p i {
+            margin-right: 15px;
+            color: blueviolet;
+            font-size: 20px;
+        }
+
+        .social-icons {
+
+            margin: 30px 0;
+        }
+
+        .social-icons a {
+            color: white;
+            font-size: 25px;
+            margin-right: 15px;
+            text-decoration: none;
+            transition: transform 0.5s;
+        }
+
+        .social-icons a:hover {
+            color: blueviolet;
+            transform: translateY(-5px);
+        }
+
+        .btn {
+            display: inline-block;
+            padding: 10px 25px;
+            background-color: blueviolet;
+            color: white;
+            text-decoration: none;
+            border-radius: 5px;
+            margin-top: 20px;
+        }
+
+        .contact-right form {
+            margin: 60px;
 
 
 
+        }
 
+        .contact-right form input,
+        form textarea {
+            width: 80%;
+            padding: 10px;
+            margin-bottom: 15px;
+            border: 0;
+            border-radius: 5px;
+            outline: none;
+            background: #262638;
+            font-size: 16px;
+            color: white;
+        }
 
+        .contact-right form .btn2 {
+            background-color: blueviolet;
+            border: 0;
+            cursor: pointer;
+            padding: 10px 25px;
+            border-radius: 5px;
+            margin-top: 20px;
+        }
 
+        .copyright {
+            text-align: center;
+            padding: 20px;
+            background-color: rgb(18, 18, 62);
+            margin-top: 40px;
+        }
 
-
-
-
-
-
-
+       #msg {
+           color: green;
+           font-size: 12px;
+           margin-top: 20px;
+       }
 
 
     </style>
 </head>
 
 <body>
-    <header>
+    <header id="home">
         <nav>
             <div class="left">Hassaan's Portfolio</div>
             <div class="right">
                 <ul>
-                  
-                    <li><a href="portfolio.html">About</a></li>
-                   
-                    <li><a href="projecthome.html">Projects</a></li>
-                   
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#skills">Skills</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#contact">Contact</a></li>
+
                 </ul>
             </div>
         </nav>
@@ -193,7 +369,7 @@
         <section class="firstsection">
             <div class="leftsection">
                 Hi, my name is <span class="purple">Hassaan</span>
-                <div>and I am passionate</div>
+                <div>and I am a passionate</div>
                 <span id="element"></span>
             </div>
             <div class="rightsection">
@@ -202,26 +378,133 @@
         </section>
 
 
-        <section class="secondsection">
+        <section class="secondsection" id="skills">
             <div class="Bleftsection">
-                <h1>skills</h1> 
+                <h1>Skills</h1>
                 <img id="mern" src="mern.png" alt="">
                 <div class="chlir">
-                      <img id="html" src="html.png" alt="">
-                       <img id="html" src="css.png" alt="">
-                        <img id="html" src="js.png" alt="">
+                    <img id="html" src="html.png" alt="">
+                    <img id="html" src="css.png" alt="">
+                    <img id="html" src="js.png" alt="">
                 </div>
             </div>
-             <div class="Brightsection">
+            <div class="Brightsection">
                 <img src="me.png" alt="">
-             </div>
-            
-            
+            </div>
+
+
 
 
 
 
         </section>
+        <section class="thirdsection" id="about">
+            <div id="#about">
+                <div class="container">
+                    <div class="row">
+                        <div class="about-col-1">
+                            <img src="hassaan.png" height="400px" width="400px">
+                        </div>
+                        <div class="about-col-2">
+                            <h1 class="sub-title">About Me</h1>
+                            <p>Hassaan introduces himself as a creative technologist with a deep passion for designing,
+                                building, and scaling
+                                software solutions, with his expertise in full-stack development. He enjoys crafting
+                                elegant code, architecting
+                                resilient systems, and transforming complex ideas into user-friendly applications. He is
+                                driven to solve
+                                real-world problems, contribute to the open-source community and evangelize about clean
+                                code and modern software
+                                architecture.</p>
+                            <div class="tab-titles">
+                                <p class="tab-links" onclick="opentab('skills')">Skills</p>
+                                <p class="tab-links" onclick="opentab('projects')">Projects</p>
+                                <p class="tab-links" onclick="opentab('education')">Education</p>
+                            </div>
+                            <div class="tab-contents active-tab" id="skills">
+                                <ul>
+                                    <li><span>Web developer</span><br>Web Application development</li>
+                                    <li><span>UI/UX</span><br>Designing Web interfaces</li>
+                                    <li><span>Web developer</span><br>Web Application development</li>
+                                </ul>
+                            </div>
+                            <div class="tab-contents" id="projects">
+                                <ul>
+                                    <li><span><a href="project.html">Spotify clone</a></span><br>A music streaming
+                                        web site built with Html, Css and Javascript</li>
+                                    <li><span>travel booking web site</span><br>A fully functional travel booking web
+                                        site
+                                        built with MERN stack</li>
+
+
+                                </ul>
+                            </div>
+                            <div class="tab-contents" id="education">
+                                <ul>
+                                    <li><span><a href="https://www.thenewcollege.in/">The New
+                                                College</a></span><br>BSC--Information Technology</li>
+                                    <li><span><a href="https://www.apnacollege.in/">Apna College</a></span><br><a
+                                            href="certificate1.pdf">certified</a> Full-stack web developer from Apna
+                                        college</li>
+                                    <li><span><a href="https://www.be10x.com/">AI tools mastery</a></span><br><a
+                                            href="certificate2.pdf">certified</a> AI tools mastery from be10x</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </section>
+        <section class="fourthsection" id="contact">
+            <div class="contact">
+                <div class="container">
+                    <div class="row">
+                        <div class="contact-left">
+                            <h1 class="sub-title">Contact Me</h1>
+                            <p><i class="fa-solid fa-paper-plane"></i>shaikhassaan15@gmail.com</p>
+                            <p><i class="fa-solid fa-phone"></i>8667601061</p>
+                            <div class="social-icons">
+                                <a href=""><i class="fa-brands fa-facebook"></i></a>
+                                <a href="https://www.linkedin.com/in/shaik-hassaan-76451a382/"><i class="fa-brands fa-linkedin"></i></a>
+                                <a href="https://www.instagram.com/shaik_hassaan/"><i
+                                        class="fa-brands fa-instagram"></i></a>
+                                <a href="https://github.com/shaikhassaan"><i class="fa-brands fa-github"></i></a>
+
+                            </div>
+                            <a href="cv-Hassaan.pdf" download class="btn btn1">Download CV</a>
+                        </div>
+                        <div class="contact-right">
+                            <form name="submit-to-google-sheet">
+                                <input type="text" name="name" placeholder="Your Name" required>
+                                <input type="email" name="email" placeholder="Your Email" required>
+                                <textarea name="Message" rows="6" placeholder="Your Message" required></textarea>
+                                <button type="submit" class="btn btn2">Submit</button>
+                            </form>
+                            <span id="msg"></span>
+                        </div>
+                    </div>
+                </div>
+                <div class="copyright">
+                    <p> copyright Shaik Hassaan.Made with ❤️ by Shaik Hassaan</p>
+                </div>
+            </div>
+
+
+        </section>
+
+
+
+
+
+
+
+
+
+
+
+
+
     </main>
     <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
     <!-- Setup and start animation! -->
@@ -230,7 +513,46 @@
             strings: ['web developer', 'web designer', 'technologist'],
             typeSpeed: 50,
         });
+
+
+        var tablinks = document.getElementsByClassName("tab-links");
+        var tabcontents = document.getElementsByClassName("tab-contents");
+        function opentab(tabname) {
+            for (tablink of tablinks) {
+                tablink.classList.remove("active-link");
+            }
+            for (tabcontent of tabcontents) {
+                tabcontent.classList.remove("active-tab");
+            }
+            event.currentTarget.classList.add("active-link");
+            document.getElementById(tabname).classList.add("active-tab");
+        }
     </script>
+    <script src="https://kit.fontawesome.com/31480a4cf2.js" crossorigin="anonymous"></script>
+
+    <!-- <form name="submit-to-google-sheet">
+  <input name="email" type="email" placeholder="Email" required>
+  <button type="submit">Send</button>
+</form> -->
+
+<script>
+  const scriptURL = 'https://script.google.com/macros/s/AKfycbxpyxKCIQinb_lcgu_zt0N2TBJPHegJNnYLVj-lLG1w0X1L3rhkhmXt3GWXktT5Bsgs/exec'
+  const form = document.forms['submit-to-google-sheet']
+  const msg = document.getElementById("msg");
+
+  form.addEventListener('submit', e => {
+    e.preventDefault()
+    fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+      .then(response =>{
+        msg.innerHTML = "Message sent successfully"
+        setTimeout(function(){
+            msg.innerHTML = ""
+        },3000)
+        form.reset()
+      })
+      .catch(error => console.error('Error!', error.message))
+  })
+</script>
 </body>
 
 </html>
